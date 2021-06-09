@@ -20,7 +20,7 @@ public class CommonInfoHolder {
 
     static AtomicInteger index = new AtomicInteger(0);
 
-    public static String genTraceId() {
+    public static String getTraceId() {
         String uuid = UUID.randomUUID().toString();
         uuid = uuid.replaceAll("-", "");
         // incrementAndGet():返回的是加1后的值
