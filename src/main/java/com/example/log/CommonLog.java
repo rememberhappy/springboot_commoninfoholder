@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
  * @Date 2021/6/9:17:16
  */
 public class CommonLog {
-    private static Logger logger = LoggerFactory.getLogger("ULogger");
+    private static Logger logger = LoggerFactory.getLogger(CommonLog.class);
 
     public static void error(Throwable throwable, String marker, Object... objects) {
         logger.error(processLogMarker(marker, throwable), objects);
